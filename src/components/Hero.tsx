@@ -4,10 +4,10 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const typingLines = [
-  "Frontend Developer",
+  "Full-Stack Developer",
   "React | Next.js | TypeScript",
   "Node.js | Express.js | Django",
-  "Building thoughtful web experiences",
+  "I build modern, responsive, and user-friendly web applications.",
 ];
 
 const Hero = () => {
@@ -68,18 +68,12 @@ const Hero = () => {
             <span className="ml-1 inline-block h-6 w-px animate-pulse bg-cyan-300 align-middle" />
           </div>
 
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-3 md:justify-start">
+          <div className="mt-8 flex flex-wrap items-center justify-center md:justify-start">
             <a
               href="#contact"
               className="rounded-lg border border-cyan-400/60 px-6 py-3 font-medium text-cyan-300 transition-colors duration-200 hover:bg-cyan-400 hover:text-slate-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
             >
               Resume
-            </a>
-            <a
-              href="#contact"
-              className="rounded-lg border border-white/15 px-6 py-3 font-medium text-gray-300 transition-colors duration-200 hover:border-purple-400 hover:bg-purple-400/10 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400"
-            >
-              Let&apos;s work together
             </a>
           </div>
         </div>
