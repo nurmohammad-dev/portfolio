@@ -1,42 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent } from "@heroui/react";
-
-const projects = [
-  {
-    title: "Bazar Dor",
-    description:
-      "A modern market price web application that displays current product prices and price changes.",
-    image: "/Bazar-dor.png",
-    technologies: [
-      "React.js",
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "MongoDB",
-    ],
-    live: "https://bazar-dor-bazar.vercel.app/",
-    github: "https://github.com/nurmohammad-dev/bazar-dor",
-  },
-  {
-    title: "Weather App",
-    description:
-      "A responsive weather application that provides weather information using a weather API.",
-    image: "/weather-app.png",
-    technologies: ["React.js", "Next.js", "API", "Tailwind CSS"],
-    live: "https://weather-app-nur.vercel.app/",
-    github: "https://github.com/nurmohammad-dev/Weather-App",
-  },
-  {
-    title: "Bangla News 24",
-    description:
-      "A news website that provides the latest news and updates in the Bangla language.",
-    image: "/Bangla-news-24.png",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-    live: "https://bangla-news-24-i.vercel.app/",
-    github: "https://github.com/nurmohammad-dev/bangla-news-24",
-  },
-];
+import { projects } from "@/data/projects";
 
 const Projects = () => {
   return (
@@ -103,6 +68,12 @@ const Projects = () => {
                 </div>
 
                 <div className="mt-auto flex flex-wrap gap-3 pt-8">
+                  <Link
+                    href={`/projects/${project.slug}`}
+                    className="rounded-lg border border-cyan-400/60 px-4 py-2.5 text-sm font-medium text-cyan-300 transition-colors duration-200 hover:bg-cyan-400 hover:text-slate-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
+                  >
+                    View details
+                  </Link>
                   {project.live !== "#" && (
                     <Link
                       href={project.live}

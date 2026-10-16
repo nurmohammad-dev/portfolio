@@ -53,6 +53,17 @@ const Contact = () => {
             </a>
           ))}
         </div>
+
+        <div className="mx-auto mt-12 grid max-w-2xl gap-4 text-left sm:grid-cols-2">
+          <a href="mailto:nurmohammad6465@gmail.com" className="rounded-xl border border-white/10 bg-white/[0.04] p-5 transition-colors hover:border-cyan-400/60">
+            <p className="text-xs uppercase tracking-[0.18em] text-gray-500">Email</p>
+            <p className="mt-2 break-all text-gray-200">nurmohammad6465@gmail.com</p>
+          </a>
+          <div className="rounded-xl border border-white/10 bg-white/[0.04] p-5">
+            <p className="text-xs uppercase tracking-[0.18em] text-gray-500">Phone / WhatsApp</p>
+            <p className="mt-2 text-gray-300">Available on request</p>
+          </div>
+        </div>
       </div>
     </section>
   );

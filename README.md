@@ -9,6 +9,7 @@ who builds clean and user-friendly web experiences with React and Next.js.
 - Added a hero section introducing my frontend development work.
 - Added an About section describing my skills, goals, and development interests.
 - Added dedicated pages for About, Skills, Projects, and Contact.
+- Added an education section with HSC and current B.Sc. information.
 - Added a Skills section highlighting React, Next.js, TypeScript, Tailwind CSS,
   backend development, and databases.
 - Added project cards with screenshots, technology badges, live demos, and
@@ -16,6 +17,8 @@ who builds clean and user-friendly web experiences with React and Next.js.
   - Bazar Dor
   - Weather App
   - Bangla News 24
+- Added a details page for every project at `/projects/[slug]`, including the
+  stack, challenges, future improvements, live link, and client repository.
 - Added GitHub, LinkedIn, and email contact links.
 - Added responsive styling, hover effects, accessible labels, and optimized
   images using Next.js and Tailwind CSS.
@@ -58,3 +61,10 @@ npm run lint     # Run ESLint
 - GitHub: [nurmohammad-dev](https://github.com/nurmohammad-dev)
 - LinkedIn: [nurmohammad-dev](https://www.linkedin.com/in/nurmohammad-dev/)
 - Email: [nurmohammad6465@gmail.com](mailto:nurmohammad6465@gmail.com)
+- Phone / WhatsApp: Available on request
+
+## Deployment
+
+The project is ready to deploy as a static Next.js site on Vercel or another
+Next.js-compatible host. Add a `public/resume.pdf` file when the resume is
+ready; the hero resume action currently takes visitors to the contact section.
